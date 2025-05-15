@@ -588,7 +588,7 @@ langBtn.addEventListener('click', function () {
                       <p>
                         지투지바이오, 글로벌제약사와 미립구 약효지속기술 MSA 체결&nbsp; &nbsp;
                         &nbsp;.. </p>
-                      <p class="date">2023.04.26</p>
+                      <p class="date">2025.04.26</p>
                     </div>
                   </a>
                 </div>
@@ -604,7 +604,7 @@ langBtn.addEventListener('click', function () {
                       <p>
                         지투지바이오, 글로벌제약사와 미립구 약효지속기술 MSA 체결&nbsp; &nbsp;
                         &nbsp;.. </p>
-                      <p class="date">2023.04.26</p>
+                      <p class="date">2025.04.26</p>
                     </div>
                   </a>
                 </div>
@@ -620,7 +620,7 @@ langBtn.addEventListener('click', function () {
                       <p>
                         지투지바이오, 글로벌제약사와 미립구 약효지속기술 MSA 체결&nbsp; &nbsp;
                         &nbsp;.. </p>
-                      <p class="date">2023.04.26</p>
+                      <p class="date">2025.04.26</p>
                     </div>
                   </a>
                 </div>
@@ -636,7 +636,7 @@ langBtn.addEventListener('click', function () {
                       <p>
                         지투지바이오, 글로벌제약사와 미립구 약효지속기술 MSA 체결&nbsp; &nbsp;
                         &nbsp;.. </p>
-                      <p class="date">2023.04.26</p>
+                      <p class="date">2025.04.26</p>
                     </div>
                   </a>
                 </div>
@@ -652,7 +652,7 @@ langBtn.addEventListener('click', function () {
                       <p>
                         지투지바이오, 글로벌제약사와 미립구 약효지속기술 MSA 체결&nbsp; &nbsp;
                         &nbsp;.. </p>
-                      <p class="date">2023.04.26</p>
+                      <p class="date">2025.04.26</p>
                     </div>
                   </a>
                 </div>
@@ -668,7 +668,7 @@ langBtn.addEventListener('click', function () {
                       <p>
                         지투지바이오, 글로벌제약사와 미립구 약효지속기술 MSA 체결&nbsp; &nbsp;
                         &nbsp;.. </p>
-                      <p class="date">2023.04.26</p>
+                      <p class="date">2025.04.26</p>
                     </div>
                   </a>
                 </div>
@@ -684,7 +684,7 @@ langBtn.addEventListener('click', function () {
                       <p>
                         지투지바이오, 글로벌제약사와 미립구 약효지속기술 MSA 체결&nbsp; &nbsp;
                         &nbsp;.. </p>
-                      <p class="date">2023.04.26</p>
+                      <p class="date">2025.04.26</p>
                     </div>
                   </a>
                 </div>
@@ -700,7 +700,7 @@ langBtn.addEventListener('click', function () {
                       <p>
                         지투지바이오, 글로벌제약사와 미립구 약효지속기술 MSA 체결&nbsp; &nbsp;
                         &nbsp;.. </p>
-                      <p class="date">2023.04.26</p>
+                      <p class="date">2025.04.26</p>
                     </div>
                   </a>
                 </div>
@@ -716,7 +716,7 @@ langBtn.addEventListener('click', function () {
                       <p>
                         지투지바이오, 글로벌제약사와 미립구 약효지속기술 MSA 체결&nbsp; &nbsp;
                         &nbsp;.. </p>
-                      <p class="date">2023.04.26</p>
+                      <p class="date">2025.04.26</p>
                     </div>
                   </a>
                 </div>
@@ -1035,9 +1035,11 @@ header.nav-Active .hd-nav-btn span:nth-child(2)::after {
 
 .h-right {
   display: flex;
+  /* align-items: center; */
 }
 
 .util {
+  
   display: flex;
   text-transform: uppercase;
   margin-right: 6rem;
@@ -2009,11 +2011,14 @@ section {
   font-family: 'Montserrat', sans-serif;
   border-radius: 5.6rem;
   overflow: hidden;
+  gap: 3rem;
+
 }
 .view-more span{
   color: #fff;
   position: relative;
 }
+
 .view-more::before {
   display: block;
   border-radius: 5.6rem;
@@ -2033,11 +2038,9 @@ section {
 .view-more::after {
   display: inline-block;
   content: "";
-  position: absolute;
   width: .4rem;
   height: .4rem;
   border: .1rem solid #fff;
-  right: calc(50% - 5rem);
   transform: rotate(-45deg);
   border-top: 0;
   border-left: 0;
@@ -2075,6 +2078,7 @@ section {
   position: relative;
   padding-right: 2.3rem;
 }
+
 .arr-viewmore:after{
   width: 1.3rem;
   height: 1.1rem;
@@ -2303,106 +2307,265 @@ html.has-scroll-dragging {
 ### media.css
 
 ```css
-@media screen and (max-width:1800px){
-  header{
+@media screen and (max-width:1800px) {
+  header {
     padding: 0 5rem;
   }
-  .gnb>li{
+
+  .gnb>li {
     margin: 0 3rem;
   }
+  .sc3 .rel{
+    width: 90%;
+  }
+  footer{
+    padding: 6rem 5%;
+    
+  }
 }
 
-@media screen and (max-width:1400px){
-.gnb{
-  display: none;
+@media screen and (max-width:1400px) {
+  .gnb {
+    display: none;
+  }
+
+  .allMenu .rel {
+    width: 100%;
+  }
+
+  .allMenu>div {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
+
+  .allMenu .rel>ul {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .allMenu .rel>ul>li {
+    margin: 2rem 0;
+    width: auto;
+  }
+
+  .allMenu .rel>ul>li>ul {
+    display: none;
+  }
+
+  .tit {
+    font-size: 6rem;
+
+  }
+
+  .hero-slider .t-wrap .txt {
+    font-size: 1.6rem;
+  }
+
+  .mbr {
+    display: none;
+  }
+
+footer .rel{
+  flex-direction: column;
+  gap: 3rem;
 }
-.allMenu .rel{
+.foot-info{
   width: 100%;
 }
-.allMenu>div{
-  width: 100vw;
-  height: 100vh;
-  border-radius: 0;
+.foot-info2{
+  align-self: flex-start;
 }
-.allMenu .rel>ul{
-  flex-wrap: nowrap;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+.foot-info dt{
+  width: 100%;
+  text-align: left;
 }
-.allMenu .rel>ul>li{
- margin: 2rem 0; 
- width: auto;
-}
-.allMenu .rel>ul>li>ul{
-  display: none;
+.foot-info dd{
+  width: 100%;
+  padding-left: 0;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: .1rem solid #444;
 }
 
-.tit{
-  font-size: 6rem;
-
-}
-.hero-slider .t-wrap .tit{
-
-}
-.hero-slider .t-wrap .txt{
-  font-size: 1.6rem;
-}
-.mbr {
-  display: none;
-}
 }
 
-@media screen and (max-width:999px){
+@media screen and (max-width:1270px) {
+.txt.m1{
+  font-size:1.5rem ;
+  line-height: 1.3;
+}
+.tit.large{
+  font-size: 7.5rem;
+}
+.sc1 .item{
+  max-width: 95%;
+  margin: auto;
+}
+.img{
+  height: 62rem;
+}
+.sc1 .item:first-child .con{
+  padding-left: 8rem;
+}
+.sc1 .item:last-child .con{
+  padding-right: 8rem;
+}
+
+}
+@media screen and (max-width:999px) {
+
   /* header */
-  header{
+  header {
     padding: 0 2rem;
-    height:7rem;
+    height: 7rem;
   }
-  header h1.logo{
+
+  header h1.logo {
     min-width: auto;
     width: 9.5rem;
     height: 2.5rem;
   }
 
+  .util {
+    margin-right: 4rem;
+  }
+
+  .util>li:not(:last-child) {
+    display: none;
+  }
+
+  .util>li+li::before {
+    display: none;
+  }
+
+  .util>li:last-child>a {
+    font-size: 1.4rem;
+    line-height: 1.2;
+  }
+
+  .hd-nav-btn {
+    width: 3.4rem;
+  }
+
   /* hero */
-  .hero-sl-1 .bg{
+  .hero-sl-1 .bg {
     background-image: url(../img/visual1_m.jpg);
   }
-  .hero-sl-2 .bg{
+
+  .hero-sl-2 .bg {
     background-image: url(../img/visual2_m.jpg);
   }
-  .hero-sl-3 .bg{
+
+  .hero-sl-3 .bg {
     background-image: url(../img/visual3_m.jpg);
   }
 
-  .hero-btns-wrap{
+  .hero-btns-wrap {
     padding-left: 2rem;
   }
-  .hero-btns-wrap .swiper-pagination .swiper-pagination-bullet{
+
+  .hero-btns-wrap .swiper-pagination .swiper-pagination-bullet {
     width: .7rem;
     height: .7rem;
     border-radius: .7rem;
   }
-  .hero-btns-wrap .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+
+  .hero-btns-wrap .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
     width: 1.4rem;
   }
-  .control-wrap{
+
+  .control-wrap {
     margin: .5rem 2rem 0;
   }
-  .hero-arr-wrap .bar{
+
+  .hero-arr-wrap .bar {
     display: none;
 
   }
-  .hero-arr-wrap .hero-arr{
+
+  .hero-arr-wrap .hero-arr {
     width: .7rem;
     height: .7rem;
     position: relative;
   }
-  .hero-arr-wrap .hero-arr.left{
+
+  .hero-arr-wrap .hero-arr.left {
     left: -11rem;
   }
 
+  /* sc1 */
+  .sc1 .con_title .txt{
+    max-width: 70%;
+  }
+
+  .sc1 .item{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .sc1 .item:last-child{
+    flex-direction: column-reverse;
+  }
+
+  .img{
+    width: 100%;
+    height: 26rem;
+  }
+  .sc1 .item .con{
+    width: 100%;
+  }
+  .sc1 .item:first-child .con{
+    padding-left: 0;
+  }
+  .sc1 .item:last-child .con{
+    padding-right: 0;
+  }
+  .sc1 .content .txt{
+    max-width: 90%;
+  }
+  .sc1 .content::after{
+    max-width:90%;
+  }
+  /* sc2 */
+  .sc2{
+    flex-direction: column;
+    height: auto;
+  }
+  .sc2::before{
+    content:"R&D";
+    font-size: 5rem;
+    text-align: center;
+    /* display: block; */
+  }
+  .sc2 .img{
+    height: 30rem;
+  }
+  .sc2 .con{
+    width: 100%;
+    padding: 10rem 5%;
+  }
+  .sc2 .con .txt2{
+    display: none;
+  }
+  .sc3 .arr-wrap{
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .sc1 .tit.large{
+    font-size: 4.5rem;
+    margin-bottom: 5.3rem;
+  }
+  .txt2{
+    font-size: 5.4rem;
+  }
+  .sc4 .txt2{
+    font-size: 2.1rem;
+
+  }
 }
 ```
 
@@ -2600,8 +2763,26 @@ document.addEventListener('DOMContentLoaded', () => {
 // sc3 slider
 
 const s3Slider = new Swiper('.s3_slider',{
-  slidesPerView: 5,
-  spaceBetween: 50,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  breakpoints:{
+    499:{
+      slidesPerView: 2,
+      spaceBetween: 20,
+      },
+    768:{
+      slidesPerView: 3,
+      spaceBetween: 30,
+      },
+    1024:{
+      slidesPerView: 4,
+      spaceBetween: 30,
+      },
+    1270:{
+      slidesPerView: 5,
+      spaceBetween: 30,
+      },
+  },
   navigation: {
     nextEl: ".sc3 .swiper-button-next",
     prevEl: ".sc3 .swiper-button-prev",
@@ -2619,5 +2800,3 @@ langBtn.addEventListener('click',function(){
 
 })//end
 ```
-
----
