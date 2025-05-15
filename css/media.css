@@ -80,6 +80,9 @@ footer .rel{
   padding-bottom: 2rem;
   border-bottom: .1rem solid #444;
 }
+  .sc3 .t-wrap{
+    margin-bottom: 2rem;
+  }
 
 }
 
@@ -242,6 +245,13 @@ footer .rel{
   }
   .sc3 .arr-wrap{
     justify-content: flex-start;
+  }
+
+  .arr-viewmore{
+    padding-right: 1rem;
+  }
+  .arr-viewmore:after{
+    left: 2rem;
   }
 }
 
