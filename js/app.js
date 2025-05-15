@@ -212,8 +212,26 @@ document.addEventListener('DOMContentLoaded', () => {
 // sc3 slider
 
 const s3Slider = new Swiper('.s3_slider',{
-  slidesPerView: 5,
-  spaceBetween: 50,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  breakpoints:{
+    499:{
+      slidesPerView: 2,
+      spaceBetween: 20,
+      },
+    768:{
+      slidesPerView: 3,
+      spaceBetween: 30,
+      },
+    1024:{
+      slidesPerView: 4,
+      spaceBetween: 30,
+      },
+    1270:{
+      slidesPerView: 5,
+      spaceBetween: 30,
+      },
+  },
   navigation: {
     nextEl: ".sc3 .swiper-button-next",
     prevEl: ".sc3 .swiper-button-prev",

@@ -207,6 +207,7 @@ header.nav-Active .hd-nav-btn span:nth-child(2)::after {
 
 .h-right {
   display: flex;
+  /* align-items: center; */
 }
 
 .util {
@@ -215,7 +216,9 @@ header.nav-Active .hd-nav-btn span:nth-child(2)::after {
   margin-right: 6rem;
   font-family: 'Montserrat';
   font-size: 1.1rem;
+  /* line-height: 1; */
   color: #fff;
+  padding-top: .5rem;
 }
 .util> li{
   position: relative;
